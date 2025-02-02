@@ -14,11 +14,7 @@ function agregarAmigo() {
     if (nombre === '') {
         mostrarMensaje('Por favor, ingresa un nombre válido.', 'error');
         return;
-    }
-    // Validación para no permitir números en el nombre
-    if (/\d/.test(nombre)) {
-        mostrarMensaje('No se permiten números en el nombre.', 'error');
-        return;
+   
     }
 
     if (amigos.includes(nombre)) {
