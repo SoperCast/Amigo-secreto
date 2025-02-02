@@ -15,6 +15,11 @@ function agregarAmigo() {
         mostrarMensaje('Por favor, ingresa un nombre válido.', 'error');
         return;
     }
+    // Validación para no permitir números en el nombre
+    if (/\d/.test(nombre)) {
+        mostrarMensaje('No se permiten números en el nombre.', 'error');
+        return;
+    }
 
     if (amigos.includes(nombre)) {
         mostrarMensaje('Este nombre ya ha sido agregado.', 'error');
@@ -51,7 +56,3 @@ function sortearAmigo() {
     resultado.innerHTML = `<li>🎉 El amigo secreto es: <strong>${amigoSeleccionado}</strong> 🎉</li>`;
 }
 
-// Función para mostrar mensajes de alerta
-function mostrarMensaje(mensaje, tipo) {
-    resultado.innerHTML = `<li class="${tipo}">${mensaje}</li>`;
-}
