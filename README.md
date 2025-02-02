@@ -13,7 +13,7 @@ Este proyecto permite a los usuarios agregar nombres a una lista y realizar un s
 * CSS3: Para la presentación y estilo básico.
 * JavaScript (ES6+): Para la lógica de la aplicación, manejo de eventos y validaciones.
 
-  #Ejecución
+# Ejecución
 * Ingresa nombres en el campo de texto.
 * Haz clic en el botón "Añadir" para agregar nombres.
 * Haz clic en "Sortear Amigo" para realizar el sorteo.
