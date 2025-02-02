@@ -161,3 +161,22 @@ ul {
     background-color: var(--color-button-hover);
 }
 
+
+/* Resultados */
+.result-list {
+    margin-top: 15px;
+    text-align: center;
+}
+
+/* Mensajes de error y éxito */
+.result-list .error {
+    color: red;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.result-list .success {
+    color: green;
+    font-weight: bold;
+    margin: 10px 0;
+}

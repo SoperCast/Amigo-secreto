@@ -52,3 +52,7 @@ function sortearAmigo() {
     resultado.innerHTML = `<li>🎉 El amigo secreto es: <strong>${amigoSeleccionado}</strong> 🎉</li>`;
 }
 
+function mostrarMensaje(mensaje, tipo) {
+    resultado.innerHTML = `<div class="${tipo}">${mensaje}</div>`;
+}
+
