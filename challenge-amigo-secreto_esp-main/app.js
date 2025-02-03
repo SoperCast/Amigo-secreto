@@ -14,7 +14,12 @@ function agregarAmigo() {
     if (nombre === '') {
         mostrarMensaje('Por favor, ingresa un nombre válido.', 'error');
         return;
-   
+    }
+
+    // Validar que el nombre contenga solo letras y espacios
+    if (!/^[A-Za-zÁÉÍÓÚáéíóúñÑ\s]+$/.test(nombre)) {
+        mostrarMensaje('El nombre solo puede contener letras y espacios.', 'error');
+        return;
     }
 
     if (amigos.includes(nombre)) {
